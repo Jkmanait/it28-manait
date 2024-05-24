@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 09, 2024 at 11:22 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Generation Time: May 24, 2024 at 04:57 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -43,11 +43,9 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `title`, `description`, `price`, `rrp`, `quantity`, `img`, `date_added`) VALUES
-(1, 'Isaw', 'Grilled chicken or pork intestines marinated in a tangy and spicy sauce.', 20, 25, 50, 'https://www.lasabbq.com/cdn/shop/products/BBQChickenIsaw1.jpg', '2024-05-08 00:00:00'),
-(2, 'Balut', 'Fertilized duck embryo boiled and commonly sold as street food in the Philippines.', 15, 20, 30, 'https://facts.net/wp-content/uploads/2020/10/AdobeStock_279704615.jpeg', '2024-05-08 00:00:00'),
-(3, 'Kwek-Kwek', 'Quail eggs coated in orange batter and deep-fried, often served with vinegar.', 10, 15, 40, 'https://www.kawalingpinoy.com/wp-content/uploads/2019/07/kwek-kwek-14.jpg', '2024-05-08 00:00:00'),
-(4, 'Fish Balls', 'Deep-fried fish balls served with sweet and spicy sauce.', 12, 18, 60, 'https://www.foxyfolksy.com/wp-content/uploads/2021/05/fish-balls.jpg', '2024-05-08 00:00:00'),
-(5, 'Taho', 'Silken tofu topped with sweet syrup and tapioca pearls.', 25, 30, 20, 'https://i0.wp.com/iankewks.com/wp-content/uploads/2023/06/IMG_2347.jpg', '2024-05-08 00:00:00');
+(10, 'Nike Air Force 1 High', 'Colour Shown: Multi-Colour/Multi-Colour/Multi-Colour\r\nStyle: DZ3635-900', 8999, 1, 10, 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/67031162-9cc5-481d-8ffe-7ada8f3d78bd/custom-nike-air-force-1-high-by-you-shoes.png', '2024-05-24 22:50:26'),
+(11, 'Nike Dunk High', 'Colour Shown: White/University Red/Black\r\nStyle: DD1869-103', 6395, 6395, 10, 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ec602aa2-b8e6-4a6e-97fe-9ed8e7febb87/dunk-high-shoes-n3vgBk.png', '2024-05-24 22:52:27'),
+(12, 'Nike Waffle Debut', 'Colour Shown: White/Summit White/White/Blue Tint\r\nStyle: DH9523-105', 2799, 2799, 10, 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1b629b25-26ec-4d73-a330-da71843d3018/waffle-debut-shoes-hbBJtw.png', '2024-05-24 22:56:55');
 
 -- --------------------------------------------------------
 
@@ -67,7 +65,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `created_at`) VALUES
-(1, 'admin', '$2y$10$kGp4g1TjBK4XwLIwRbBHSeZ4W5FpPbYoB1ap5NfFUjUPAcE3KR5QG', '2024-04-29 16:39:58');
+(1, 'admin', '$2y$10$kGp4g1TjBK4XwLIwRbBHSeZ4W5FpPbYoB1ap5NfFUjUPAcE3KR5QG', '2024-04-29 16:39:58'),
+(0, 'jimjim', '$2y$10$MBe5y9.ZFkpJZnLImk8VoODPlNAHmLo4bACZtk/kdyqsixB7nU3hC', '2024-05-24 22:15:50'),
+(0, 'jim', '$2y$10$X//sBW8xjgFshs3GOfJAbeeGoufNHrBJUIZzmsIJkaeKqMTt3KnWq', '2024-05-24 22:17:14'),
+(0, 'admin11', '$2y$10$vrDO0OMbqLTT6MsAvo4rrO/4KgWmKCFzNDML9ZDISOEApzUpPPkny', '2024-05-24 22:18:34');
 
 --
 -- Indexes for dumped tables
@@ -87,7 +88,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
